@@ -11,3 +11,5 @@ simple fast root plots on the terminal
 - [ ] look into uniplot (https://github.com/olavolav/uniplot) as an alternative to plotext (or maybe allow either as an option)
 - [ ] use the python logging package
 - [ ] create a nice gif animation of its usage to put in the readme (see uniplot above)
+- [ ] Learn how to use a testing package and make tests for each case
+  (histogram 1D, 2D, etc. and ttree 1D, 2D, etc.)
