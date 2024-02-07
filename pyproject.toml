@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rootext"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Brandenburg <danbburg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uproot = "^5.2.2"
+plotext = "^5.2.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
