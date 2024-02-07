@@ -52,8 +52,14 @@ if __name__ == "__main__":
     
     if (len(sys.argv) == 4):
         _, file_name, tree_name, branch_name = sys.argv
-
         branch = plot_branch_plx(file_path, file_name, tree_name, branch_name)
+    elif (len(sys.argv) == 3):
+        _, file_name, tree_name = sys.argv
+        
+        # list branches
+        with uproot.open(file_path + file_name) as file:
+            tree = file[tree_name]
+            print( "\n".join(tree.keys()) )
     else:
         print("Enter three arguments: File Name, Tree Name, Branch Name \n")
         
